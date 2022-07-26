@@ -13,7 +13,7 @@ async function bootstrap() {
     {
       transport: Transport.NATS,
       options: {
-        servers: ['nats://localhost:4222'],
+        servers: ['nats://nats:4223'],
         queue: 'microservice1_queue',
       },
     },
