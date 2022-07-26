@@ -10,7 +10,7 @@ import { AppService } from './app.service';
         name: 'MICROSERVICE1',
         transport: Transport.NATS,
         options: {
-          servers: ['nats://nats:4222'],
+          url: 'nats://nats:4222',
           queue: 'microservice1_queue',
         },
       },
@@ -18,7 +18,7 @@ import { AppService } from './app.service';
         name: 'MICROSERVICE2',
         transport: Transport.NATS,
         options: {
-          servers: ['nats://nats:4222'],
+          url: 'nats://nats:4222',
           queue: 'microservice2_queue',
         },
       },

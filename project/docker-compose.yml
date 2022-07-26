@@ -4,6 +4,7 @@ services:
   nats:
     image: 'bitnami/nats:latest'
     hostname: laboratory-nats-server
+    container_name: nats
     ports:
       - 4222:4222
       - 6222:6222

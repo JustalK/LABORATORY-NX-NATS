@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @MessagePattern({cmd: 'greeting'})
+  @MessagePattern({cmd: 'microservice1.greeting'})
   getGreetingMessage(name: string): string {
     return `[MICROSERVICE 1] Hello ${name}`;
   }

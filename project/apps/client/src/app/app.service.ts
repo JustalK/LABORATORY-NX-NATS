@@ -9,10 +9,10 @@ export class AppService {
   ){}
 
   async getHelloM1(){
-    return this.client1.send({cmd: 'greeting'}, 'Micro1');
+    return this.client1.send({cmd: 'microservice1.greeting'}, 'Micro1');
   }
 
   async getHelloM2() {
-    return this.client2.send({cmd: 'greeting'}, 'Micro2');
+    return this.client2.send({cmd: 'microservice2.greeting'}, 'Micro2');
   }
 }
